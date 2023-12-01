@@ -1,4 +1,5 @@
-#TPC-DS-mariadb (INFO-H-419)
+# TPC-DS-mariadb (INFO-H-419)
+
 Development of a TPC-DS benchmark for mariaDB.
 
 You can find the project report at the root of the repository.
