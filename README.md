@@ -1,12 +1,12 @@
-TPC-DS-mariadb (INFO-H-419)
+#TPC-DS-mariadb (INFO-H-419)
 Development of a TPC-DS benchmark for mariaDB.
 
 You can find the project report at the root of the repository.
 
 To reproduce the benchmark:
 
-First download the tpcds-kit and follow the steps described in the file "How_To_Guide-DS-V2.0.0.docx" to generate random datas.
+1. First download the tpcds-kit from https://www.tpc.org/tpc_documents_current_versions/download_programs/tools-download-request5.asp?bm_type=TPC-DI&bm_vers=1.1.0&mode=CURRENT-ONLY and follow the instructions in TPC-DI_v1.1.0.pdf
 
-Then download MariaDB
+2. Then download MariaDB
 
-Create the DB and populate it using the scripts described bellow.
+3. Create the DB and populate it using the scripts described bellow.
