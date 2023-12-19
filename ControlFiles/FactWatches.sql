@@ -1,4 +1,4 @@
-LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/WatchHistory.txt'
+LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/WatchHistory.txt'
 INTO TABLE S_Watches
 FIELDS TERMINATED BY '|'
 LINES STARTING BY '' 
@@ -9,5 +9,3 @@ W_S_SYMB ,
 W_DTS ,
 W_ACTION
 );
-
---This one is working 

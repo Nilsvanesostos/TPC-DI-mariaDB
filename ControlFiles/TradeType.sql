@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/TradeType.txt'
+INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/TradeType.txt'
 INTO TABLE TradeType
 FIELDS TERMINATED BY '|'
 LINES STARTING BY '' 
@@ -12,4 +12,3 @@ TT_IS_MRKT
 );
 
 
---THIS ONE WORKS

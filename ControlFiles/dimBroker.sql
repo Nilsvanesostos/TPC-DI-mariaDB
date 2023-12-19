@@ -1,4 +1,4 @@
-LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/HR.csv'
+LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/HR.csv'
 INTO TABLE S_Broker
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\r\n'
@@ -17,11 +17,8 @@ EmployeePhone
 SET EmployeeJobCode = NULLIF(@var, '');
 
 
---THIS ONE WORKS 
 
 INSERT INTO DimBroker (BrokerID,ManagerID,FirstName,LastName,MiddleInitial,Branch,Office,Phone,IsCurrent,BatchID,EffectiveDate,EndDate)
-      SELECT SB.EmployeeID, SB.ManagerID, SB.EmployeeFirstName, SB.EmployeeLastName, SB.EmployeeMI, SB.EmployeeBranch, SB.EmployeeOffice, SB.EmployeePhone, 'true', %d, (SELECT MIN(DateValue) FROM DimDate), TO_DATE('9999/12/31', 'yyyy/mm/dd')
+      SELECT SB.EmployeeID, SB.ManagerID, SB.EmployeeFirstName, SB.EmployeeLastName, SB.EmployeeMI, SB.EmployeeBranch, SB.EmployeeOffice, SB.EmployeePhone, TRUE, 1, (SELECT MIN(DateValue) FROM DimDate), STR_TO_DATE('9999/12/31', '%Y/%m/%d')
       FROM S_Broker SB
       WHERE SB.EmployeeJobCode = 314;
-
---I still have to try this

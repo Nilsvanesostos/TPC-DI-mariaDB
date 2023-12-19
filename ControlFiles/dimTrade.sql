@@ -1,4 +1,4 @@
-LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/Trade.txt'
+LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/Trade.txt'
 INTO TABLE S_Trade
 FIELDS TERMINATED BY '|'
 LINES STARTING BY '' 
@@ -26,4 +26,3 @@ t_comm = NULLIF(@var3,''),
 t_tax = NULLIF(@var4,''),
 t_dts = NULLIF(@var5,'');
 
---THIS ONE IS UPLOADED

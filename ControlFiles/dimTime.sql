@@ -1,4 +1,4 @@
-LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/Time.txt'
+LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/Time.txt'
 INTO TABLE DimTime
 FIELDS TERMINATED BY '|'
 LINES STARTING BY '' 
@@ -17,4 +17,3 @@ TERMINATED BY '\r\n'
 );
 
 
---THIS ONE WORKS

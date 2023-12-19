@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/StatusType.txt'
+INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/StatusType.txt'
 
 INTO TABLE StatusType
 FIELDS TERMINATED BY '|'
@@ -11,4 +11,3 @@ ST_NAME
 );
 
 
---THIS ONE WORKS

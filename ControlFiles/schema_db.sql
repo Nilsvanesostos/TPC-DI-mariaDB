@@ -1,5 +1,5 @@
 CREATE TABLE BatchDate (
-    BatchNumber TINYINT,
+    BatchNumber TINYINT AUTO_INCREMENT PRIMARY KEY,
     BatchDate DATE NOT NULL
 );
 

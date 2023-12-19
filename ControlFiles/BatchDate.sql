@@ -1,4 +1,15 @@
-LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/Date.txt'
+LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/loading/staging/3/Batch1/BatchDate.txt'
+INTO TABLE BatchDate
+FIELDS TERMINATED BY '|'
+LINES STARTING BY ''
+TERMINATED BY '\r\n'
+(
+BatchDate 
+);
+
+
+
+LOAD DATA INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/Date.txt'
 INTO TABLE DimDate
 FIELDS TERMINATED BY '|'
 LINES STARTING BY '' 
@@ -23,3 +34,4 @@ FiscalQtrID ,
 FiscalQtrDesc ,
 HolidayFlag
 );
+

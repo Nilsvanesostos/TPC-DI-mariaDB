@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE 'D:/Documentos/tpc-di-tool/Tools/staging/3/Batch1/TaxRate.txt'
+INFILE 'D:/Documentos/tpc-di-tool/Tools/Loading/staging/3/Batch1/TaxRate.txt'
 INTO TABLE TaxRate
 FIELDS TERMINATED BY '|'
 LINES STARTING BY '' 
@@ -10,5 +10,3 @@ TX_NAME ,
 TX_RATE
 );
 
-
---THIS ONE WORKS
