@@ -34,7 +34,8 @@ load_security.sql.
 
 3. You have to insert the info for DimBroker and the control
 file from Prospect since you will use for DimCustomer and 
-DimAccount. This is done by executing dimBroker.sql and Prospect.sql from the folder schemas.
+DimAccount. This is done by executing dimBroker.sql and Prospect.sql from the folder schemas. 
+After this, we have to execute load_broker.py and load_broker.sql, and load_prospect.py and load_prospect.sql.
 
 4. Load all the data for DimCustomer and DimAccount. This is done by 
 executing load_customer_account.py.
@@ -43,10 +44,9 @@ executing load_customer_account.py.
 
 6. Load the indormation of S_Trade, S_Cash_Balances, S_Watches and S_Holdings by executing dimTrade.sql, 
 FactCashBalance.sql, FactWatches.sql and FactHoldings.sql Make transformations in S_Trade, S_Cash_Balances, S_Watches and S_Holdings
-by executing the files load_trade.py, load_cash_balances.py, load_watches.py and
+by executing the files load_trade.py, load_cash_balance.py, load_watches.py and
 load_holdings.py, and then, load_trade.sql, load_cash_balances.sql load_watches.sql and
 load_holdings.sql.
 
-7. Finally, do something with FactMarketHistory and DImessages. To be honest, I
-haven't figured out how to do this at this point.
+7. Finally, execute load_DailyMarket.py, load_DailyMarket.sql, FactMarketHistory.sql and we are done.
 
