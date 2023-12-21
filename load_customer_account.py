@@ -12,12 +12,10 @@ batch_number = 1
 f = open('load_customer_account.sql','w')
 
 
-# database_name = input('What is the database name where you want to load the data?\n')
-# user_name = input('What is the user name?\n')
+
 database_name = 'tpcdi'
 user_name = 'root'
-# password_name = input('What is your password in postgres?\n') 
-password_name = 'conejolibra899'
+password_name = input('What is your password in postgres?\n') 
 host_name = '127.0.0.1'
 port_name = '3306'
 
