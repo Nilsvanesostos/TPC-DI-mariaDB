@@ -48,5 +48,5 @@ by executing the files load_trade.py, load_cash_balance.py, load_watches.py and
 load_holdings.py, and then, load_trade.sql, load_cash_balances.sql load_watches.sql and
 load_holdings.sql.
 
-7. Finally, execute load_DailyMarket.py, load_DailyMarket.sql, FactMarketHistory.sql and we are done.
+7. Finally, execute DailyMarket.sql, FactMarketHistory.sql and we are done.
 
