@@ -281,7 +281,7 @@ CREATE TABLE Financial (
 
 CREATE TABLE Prospect (
     AgencyID CHAR(30) NOT NULL,
-    SK_RecordDateID INT NOT NULL,
+    SK_RecordDateID INT NULL,
     SK_UpdateDateID INT NOT NULL,
     BatchID DECIMAL(5) NOT NULL,
     IsCustomer BOOLEAN NOT NULL,

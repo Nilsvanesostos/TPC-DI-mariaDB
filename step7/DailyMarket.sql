@@ -1,0 +1,13 @@
+LOAD DATA INFILE 'C:/ULB/MA2/tpc-di/staging/7/Batch1/DailyMarket.txt'
+INTO TABLE S_Daily_Market
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\r\n'
+(
+DM_DATE,
+DM_S_SYMB,
+DM_CLOSE,
+DM_HIGH,
+DM_LOW,
+DM_VOL
+)
+

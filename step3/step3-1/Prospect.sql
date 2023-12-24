@@ -1,0 +1,37 @@
+LOAD DATA INFILE 'C:/ULB/MA2/tpc-di/staging/7/Batch1/Prospect.csv'
+INTO TABLE S_Prospect
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\r\n'
+(
+AGENCY_ID ,
+LAST_NAME ,
+FIRST_NAME ,
+MIDDLE_INITIAL ,
+GENDER ,
+ADDRESS_LINE_1 ,
+ADDRESS_LINE_2 ,
+POSTAL_CODE ,
+CITY,
+STATE ,
+COUNTRY ,
+PHONE ,
+@var5 ,
+@var1 ,
+@var4 ,
+MARITAL_STATUS ,
+@var2,
+@var3 ,
+OWN_OR_RENT_FLAG ,
+EMPLOYER ,
+@var2 ,
+@var6
+)
+
+SET NUMBER_CARS = NULLIF(@var1, ''),
+AGE = NULLIF(@var2, ''),
+CREDIT_RATING = NULLIF(@var3, ''),
+NUMBER_CHILDREM = NULLIF(@var4, ''),
+INCOME = NULLIF(@var5, ''),
+NET_WORTH = NULLIF(@var6, '');
+
+

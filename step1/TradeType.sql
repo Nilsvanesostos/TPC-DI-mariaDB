@@ -1,0 +1,14 @@
+LOAD DATA
+INFILE 'C:/ULB/MA2/tpc-di/staging/7/Batch1/TradeType.txt'
+INTO TABLE TradeType
+FIELDS TERMINATED BY '|'
+LINES STARTING BY '' 
+TERMINATED BY '\r\n'
+(
+TT_ID ,
+TT_NAME ,
+TT_IS_SELL ,
+TT_IS_MRKT
+);
+
+
